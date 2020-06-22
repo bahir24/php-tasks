@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+
+<body>
+    <h2>
+        How to define a clickable button
+    </h2>
+    <button type="button" autofocus onclick="console.log('Welcome Friends')">Define</button>
+    <h2>
+        a. How to specify that a button should automatically get focus when the page load?
+    </h2>
+    <button type="button" autofocus onclick="console.log('Autofocus')">Autofocus</button>
+    <h2>
+        b. How to specify that a button should be disabled?
+    </h2>
+    <button type="button" disabled onclick="console.log('Autofocus')">Autofocus</button>
+    <h2>
+        c. How to specify one or more forms the button belongs to?
+    </h2>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/button-form-answer-demo.php"
+        id="form1">
+        <label>First name : <input type="text" name="fname"></label><br>
+        <label>Last name : <input type="text" name="lname"></label><br>
+        <label>Present Address : <input type="text" name="add"></label><br>
+        <label>E-mail : <input type="text" name="mail"></label><br>
+    </form>
+    <button type="submit" form="form1" value="Submit">Submit</button>
+    <h2>
+        d. How to specify where to send the form-data when a form is submitted?
+    </h2>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/button-formaction-
+    answer-demo.php" id="form2" method="post">
+        <label>First name : <input type="text" name="fname"></label><br>
+        <label>Last name : <input type="text" name="lname"></label><br>
+        <label>Present Address : <input type="text" name="add"></label><br>
+        <label>E-mail : <input type="text" name="mail"></label><br>
+        <button type="submit" value="Submit">Submit</button>
+        <button type="submit" value="Submit as admin"formaction="https://www.w3resource.com/html-css-
+        exercise/basic/solution/button-formaction-admin-demo.php">Submit as admin</button>
+    </form>
+    
+</body>
+
+</html>
