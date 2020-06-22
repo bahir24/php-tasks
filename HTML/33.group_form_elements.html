@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h1>33. How to groups related elements in a form</h1>
+        <fieldset>
+            Name: <input type="text" size="30" /><br /><br />
+            Email: <input type="text" size="30" /><br /><br />
+            Place: <input type="text" size="10" /><br /><br />
+        </fieldset>
+        <h2>a. How to specify that a group of related form elements should be disabled</h2>
+        <fieldset disabled>
+            Name: <input type="text" size="30" /><br /><br />
+            Email: <input type="text" size="30" /><br /><br />
+            Place: <input type="text" size="10" /><br /><br />
+        </fieldset>
+        <h2>b. How to specify one or more forms the fieldset belongs to</h2>
+        <form action="https://www.w3resource.com/html-css-exercise/basic/solution/fieldset-form-answer-demo.php"
+            method="post" id="w3r_form">
+            What is your favorite game? <input type="text" name="game"><br>
+            <input type="submit">
+        </form>
+        <fieldset form="w3r_form">
+            Name: <input type="text" size="30" /><br /><br />
+            Email: <input type="text" size="30" /><br /><br />
+            Place: <input type="text" size="10" /><br /><br />
+        </fieldset>
+        <h2>c. How to specify a name for the fieldset</h2>
+        <fieldset name="w3resource">
+            Name: <input type="text" size="30" /><br /><br />
+            Email: <input type="text" size="30" /><br /><br />
+            Place: <input type="text" size="10" /><br /><br />
+            <button type="button" onclick="ChangeColor()">Change background color of fieldset</button>
+        </fieldset>
+    </form>
+    <script>
+        function ChangeColor() {
+            var fldname = document.getElementsByName("w3resource");
+            fldname[0].style.backgroundColor = '#C7E9FF';
+        }
+    </script>
+</body>
+
+</html>
