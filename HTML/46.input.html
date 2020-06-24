@@ -8,12 +8,170 @@
 </head>
 
 <body>
-    <form name="example_ form" method="POST" action="input-answer-demo.php">
-        Name: <input type="text" name="name" size="30"> <br>
-        Email: <input type="text" name="email" size="30" autocomplete="off"> <br>
-        Place : <input type="text" name="place" size="10">
+    <h1>
+        46. How to define an input control?
+    </h1>
+    <h2>
+        I. How to specify the types of files that the server accepts(only for type="file")?
+    </h2>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-accept-demo.php">
+        <input type="file" name="my_image" accept="image/*">
+        <input type="submit">
+    </form>
+    <h2>
+        II. How to specify an alternate text for images?
+    </h2>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-alt-answer-demo.php">
+        Name: <input type="text" name="name" size="30">
+        <input type="image" src="https://www.w3resource.com/html-css-exercise/basic/solution/input-altimages.jpg"
+            alt="Submit" width="50" height="50">
+    </form>
+    <h2>
+        III. How to specify whether an input element should have autocomplete disabled?
+    </h2>
+    <form name="example_form" method="POST" action="https://www.w3resource.com/html-css-
+    exercise/basic/solution/input-autocomplete-answer-demo.php">
+        Name: <input type="text" name="name" size="30"><br>
+        Email: <input type="text" name="email" autocomplete="off" size="30"> <br>
+        Place: <input type="text" name="place" autocomplete="off" size="10">
         <input type="submit" value="Submit">
     </form>
+    <h2>
+        IV. How to specify that an input element should automatically get focus when the page loads?
+    </h2>
+    <form name="example_form" method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-autofocus-answer-demo.php">
+        First name: <input type="text" name="fname" autofocus><br>
+        Last name: <input type="text" name="lname"><br>
+        Address: <input type="text" name="address"><br>
+        <input type="submit">
+    </form>
+    <h2>
+        V. How to specify that an input element should be pre-selected when the page loads (for type="checkbox" or
+        type="radio")?
+    </h2>
+    <form method="POST" action="https://www.w3resource.com/html-css-
+exercise/basic/solution/input-checked-answer-demo.php">  
+  <input type="checkbox" name="device[]" value="Laptop"> I have a Laptop<br>
+  <input type="checkbox" name="device[]" value="Printer" checked> I have a Printer<br>
+  <input type="submit" value="Submit">
+</form>
+
+    <h2>
+        VI. How to specify that an input element should be disabled?
+    </h2>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-disabled-answer-demo.php">
+        Name: <input type="text" name="name"><br>
+        Email: <input type="text" email="email" disabled><br>
+        <input type="submit" value="Submit">
+      </form>
+    <h2>
+        VII. How tie an input element to a form, though the input element resides outside the form?
+    </h2>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-form-answer-demo.php" id="form1">
+        First name: <input type="text" name="fname"><br>
+        <input type="submit" value="Submit">
+        </form><br>
+        <p>The "Address" field below is outside the form element, but still part of the form.</p>
+        Address: <input type="text" name="address" form="form1">
+    <h2>
+        VIII. How to specify the URL that will process the data supplied through input(s) when the form is submitted
+        (for type="submit" and type="image")?
+    </h2>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-formation-submit-answer-demo.php">
+        Name: <input type="text" name="name"><br>
+        Address: <input type="text" name="address"><br>
+        <input type="submit"value="Submit"><br>
+        <input type="submit" formaction="http://localhost/html-css-exercise/basic/solution/input-formation-admin-answer-demo.php" value="Submit as admin">
+      </form>
+    <h2>
+        IX. How to specify the form-data should be encoded when submitting it to the server (for type="submit" and
+        type="image")?
+    </h2>
+
+
+    <h2>
+        X. How to define the HTTP method for sending data to the action URL (for type="submit" and type="image")?
+    </h2>
+
+
+    <h2>
+        XI. How to define that form elements should not be validated when submitted?
+    </h2>
+
+
+    <h2>
+        XII. How to specify where to display the response that is received after submitting the form (for type="submit"
+        and type="image")?
+    </h2>
+
+
+    <h2>XIII. How to specify the height of an input element (only for type="image")?</h2>
+
+    <h2>
+
+        XIV. How to refer to a datalist element that contains pre-defined options for an input element?
+    </h2>
+
+    <h2>
+        XV. How to specify the maximum value for an input element?
+    </h2>
+
+    <h2>
+        XVI. How to specify the maximum number of characters allowed in an input element?
+    </h2>
+
+    <h2>
+        XVII. How to specify a minimum value for an input element?
+    </h2>
+
+    <h2>
+        XVIII. How to specify that a user can enter more than one value in an input element?
+    </h2>
+
+    <h2>
+        XIX. How to specify the name of an input element?
+    </h2>
+
+    <h2>
+        XX. How to specify a regular expression that an input element's value is checked against?
+    </h2>
+
+    <h2>
+        XXI. How to specify a short hint that describes the expected value of an input element?
+    </h2>
+
+    <h2>
+        XXII. How to specify that an input field is read-only?
+    </h2>
+
+    <h2>
+        XXIII. How to specify that an input field must be filled out before submitting the form?
+    </h2>
+
+    <h2>
+        XXIV. How to specify the width, in characters, of an input element?
+    </h2>
+
+    <h2>
+        XXV. How to specify the URL of the image used as a submit button (only for type="image")?
+    </h2>
+
+    <h2>
+        XXVI. How to specify the legal number intervals for an input field?
+    </h2>
+
+    <h2>
+        XXVII. How to specify the type of an input element ?
+    </h2>
+
+    <h2>
+        XXVIII. How to specify the value of an input element?
+    </h2>
+
+    <h2>
+        XXIX. How to specify the width of an input element (only for type="image")?
+    </h2>
+
 </body>
 
 </html>
