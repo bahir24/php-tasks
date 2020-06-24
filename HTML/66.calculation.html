@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        66. How to define the result of a calculation
+    </h1>
+    <h2>
+        a. How to specify the relationship between the result of the calculation, and the elements used in the
+        calculation?
+    </h2>
+    <h2>
+        b. How to specify one or more forms the output element belongs to?
+    </h2>
+    <h2>
+        c. How to specify a name for the output element?
+    </h2>
+    <form id="MyForm" oninput="w3resource.value=parseInt(input.value)+parseInt(output.value)">0
+        <input type="range" id="input" value="100">100
+        +<input type="number" id="output" value="10">
+        =<output form="MyForm" name="w3resource" for="input output"></output>
+    </form>
+</body>
+
+</html>
