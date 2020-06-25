@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        90. How to define a header cell in a table
+    </h1>
+    <h2>
+        a. How to specify an abbreviated version of the content in a header cell?
+    </h2>
+    <h2>
+        b. How to specify the number of columns a header cell should span?
+    </h2>
+    <h2>
+        c. How to specify one or more header cells a cell is related to?
+    </h2>
+    <h2>
+        d. How to specify the number of rows a header cell should span?
+    </h2>
+    <h2>
+        e. How to specify whether a header cell is a header for a column, row, or group of columns or rows?
+    </h2>
+    <table border="1">
+        <tr>
+            <th scope="col" id="type" abbr="type" rowspan="4">Type</th>
+            <th scope="col" id="Description" abbr="Description">Description</th>
+            <th scope="col" id="text" abbr="text" colspan="2">Text + Date</th>
+        </tr>
+        <tr>
+            <td headers="type">PHP</td>
+            <td headers="Description">Server side scripting</td>
+            <td headers="text">Lorem ipsum dolor sit.</td>
+            <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+            <td headers="type">JavaScript</td>
+            <td headers="Description">Client side scripting</td>
+            <td headers="text">Lorem ipsum dolor sit amet.</td>
+            <td>Lorem, ipsum.</td>
+        </tr>
+    </table>
+</body>
+
+</html>

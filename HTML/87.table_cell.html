@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>87. How to define a cell in a table</h1>
+    <h2>
+        a. How to specify the number of columns a cell should span?
+    </h2>
+    <h2>
+        b. How to specify one or more header cells a cell is related to?
+    </h2>
+    <table border="1">
+
+        <tr>
+            <th id="uid">User Id</th>
+            <th id="name">User Name</th>
+            <th id="address">Address</th>
+            <th id="phone">Phone No</th>
+        </tr>
+        <tr>
+            <td headers="uid">PHP</td>
+            <td headers="name">Server side scripting</td>
+            <td headers="address">Lorem, ipsum dolor.</td>
+            <td headers="name">Lorem ipsum dolor sit.</td>
+        </tr>
+        <tr>
+            <td headers="uid">JavaScript</td>
+            <td headers="name">lorem2</td>
+            <td colspan="2" headers="address">JavaScript</td>
+        </tr>
+    </table>
+</body>
+
+</html>
